@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
   "permissions": [
     "contextMenus",
@@ -11,16 +11,16 @@
   ],
   "host_permissions": [],
   "action": {
-    "default_popup": "options.html"
+    "default_popup": "src/options.html"
   },
   "options_ui": {
-    "page": "options.html",
+    "page": "src/options.html",
     "open_in_tab": false
   },
   "icons": {
-    "32": "logo-32.png",
-    "48": "logo-48.png",
-    "64": "logo-64.png",
-    "128": "logo-128.png"
+    "32": "src/logo-32.png",
+    "48": "src/logo-48.png",
+    "64": "src/logo-64.png",
+    "128": "src/logo-128.png"
   }
 }
