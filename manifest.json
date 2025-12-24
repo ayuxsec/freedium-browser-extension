@@ -1,5 +1,5 @@
 {
-  "name": "Open in Freedium (Firefox Stable Fork)",
+  "name": "Open in Freedium Fork",
   "version": "1.1.2",
   "manifest_version": 2,
   "background": {
@@ -25,8 +25,11 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "ayux-open-in-freedium-fork@ayuxsec.dev",
-      "strict_min_version": "91.0"
+      "id": "ayux-open-in-freedium-stable-fork@ayuxsec.dev",
+      "strict_min_version": "91.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "content_security_policy": "script-src 'self'; object-src 'self'"
