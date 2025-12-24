@@ -1,9 +1,9 @@
 {
-  "name": "Open in Freedium",
-  "version": "1.1.0",
+  "name": "Open in Freedium (Firefox Stable Fork)",
+  "version": "1.1.2",
   "manifest_version": 2,
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["src/background.js"],
     "persistent": false
   },
   "permissions": [
@@ -11,21 +11,22 @@
     "storage"
   ],
   "browser_action": {
-    "default_popup": "options.html"
+    "default_popup": "src/popup/options.html"
   },
   "options_ui": {
-    "page": "options.html",
+    "page": "src/popup/options.html",
     "open_in_tab": false
   },
   "icons": {
-    "32": "logo-32.png",
-    "48": "logo-48.png",
-    "64": "logo-64.png",
-    "128": "logo-128.png"
+    "32": "src/icons/logo-32.png",
+    "48": "src/icons/logo-48.png",
+    "64": "src/icons/logo-64.png",
+    "128": "src/icons/logo-128.png"
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
-      "id": "freedium-browser-extension@wywywywy.com"
+      "id": "ayux-open-in-freedium-fork@ayuxsec.dev",
+      "strict_min_version": "91.0"
     }
   },
   "content_security_policy": "script-src 'self'; object-src 'self'"
